@@ -1,0 +1,45 @@
+.app-wrapper{
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-template-areas: "h h"
+  "n c";
+  width: 1200px;
+  margin: 0 auto;
+  grid-gap: 10px;
+}
+.header{
+  grid-area: h;
+  background-color: #fc4b4b;
+}
+.header img{
+  width: 60px;
+  margin-left: 20px;
+}
+.nav{
+  grid-area: n;
+  background-color: #d07272;
+}
+.content{
+  grid-area: c;
+  background-color: #ff9e9e;
+}
+.banner{
+  width: 100%;
+}
+.postUserLogo{
+  width: 60px;
+}
+a{
+  text-decoration: none;
+}
+.active{
+  color: red;
+}
+.dialogs{
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+}
+.dialog.active{
+  color: red;
+}
